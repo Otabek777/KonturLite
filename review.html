@@ -10,10 +10,40 @@
     <title></title>
 </head>
 <body>
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal__block">
+            <h3>Оставить отзыв</h3>
+            <h6>Имя</h6>
+            <input type="text" class="input" placeholder="Например, Иван Иванов">
+            <h6>Ваш отзыв</h6>
+            <textarea name="" id="" placeholder="Текст отзыва"></textarea>
+            <div class="modal__box">
+                <span class="modal__close" id="modalClose"></span>
+                <div class="check">
+                    <input type="checkbox">
+                    <label for="">Нажимая на кнопку "Отправить", я даю согласие на <a href="#">обработку персональных данных</a></label>
+                </div>
+                <button class="btn">Отправить</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal done">
+        <div class="modal__block">
+            <span class="modal__close" id="modalClose"></span>
+            <h2>Спасибо за оставленный отзыв!</h2>
+        </div>
+    </div>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__box">
+                <div class="header__form" id="searchBlock">
+                    <img src="img/search-icon.svg" alt="">
+                    <input type="text" placeholder="Я ищу ...">
+                    <button class="btn">Найти</button>
+                    <span class="close" id="searchClose"></span>
+                </div>
                 <a href="#" class="header__logo">
                     <img src="img/Logo.svg" alt="">
                 </a>
@@ -36,10 +66,13 @@
                        <img src="img/phone-icon.svg" alt="">
                         <p>+7 (383) 000-22-01</p>
                         <img src="img/down.svg" alt="">
+                        <div class="number__block">
+                            <a href="#"><img src="img/phone-icon.svg" alt=""> +7 (383) 000-22-02</a>
+                        </div>
                    </button>
                    <a class="link" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
-                <button class="header__search">
+                <button class="header__search" id="searchOpen">
                     <img src="img/search.svg" alt="">
                 </button>
             </div>
@@ -105,7 +138,7 @@
                         </div>
                         <div class="review__box">
                             <h2>Отзывы</h2>
-                            <button class="btn">Оставить отзыв</button>
+                            <button class="btn" id="modalOpen">Оставить отзыв</button>
                         </div>
                         <div class="review__block">
                             <div class="img">
@@ -234,6 +267,18 @@
     </footer>
 
     <script src="js/jquery.min.js"></script>
+    <script>
+        const modalOpen = document.querySelector('#modalOpen'),
+            modalClose = document.querySelector('#modalClose'),
+            modalBlock = document.querySelector('#modal');
+
+        modalOpen.addEventListener('click', function() {
+            modalBlock.classList.add('active');
+        });
+        modalClose.addEventListener('click', function() {
+            modalBlock.classList.remove('active');
+        });
+    </script>
     <script src="js/main.js"></script>
     <script src="js/SmoothScroll.js"></script>
 </body>

@@ -14,6 +14,12 @@
     <header class="header">
         <div class="container">
             <div class="header__box">
+                <div class="header__form" id="searchBlock">
+                    <img src="img/search-icon.svg" alt="">
+                    <input type="text" placeholder="Я ищу ...">
+                    <button class="btn">Найти</button>
+                    <span class="close" id="searchClose"></span>
+                </div>
                 <a href="#" class="header__logo">
                     <img src="img/Logo.svg" alt="">
                 </a>
@@ -36,10 +42,13 @@
                        <img src="img/phone-icon.svg" alt="">
                         <p>+7 (383) 000-22-01</p>
                         <img src="img/down.svg" alt="">
+                        <div class="number__block">
+                            <a href="#"><img src="img/phone-icon.svg" alt=""> +7 (383) 000-22-02</a>
+                        </div>
                    </button>
                    <a class="link" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
                 </div>
-                <button class="header__search">
+                <button class="header__search" id="searchOpen">
                     <img src="img/search.svg" alt="">
                 </button>
             </div>
@@ -157,7 +166,9 @@
                         <p>Самый «нижний» заголовок h6 предваряет такие элементы, как «Комментарий» или «Таблица».</p>
                         <h6>ИЗОБРАЖЕНИЯ</h6>
                         <p>Для вставки изображений в контент используется элемент «Картинка». Дополнительными классами «Влево» (left) и «Вправо» (right) для этого же элемента можно задать соответствующее выравнивание.</p>
-                        <img src="img/banner.png" alt="">
+                        <div class="img-banner">
+                            <img src="img/banner.png" alt="">
+                        </div>
                     </div>
                 </section>
             </div>
