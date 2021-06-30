@@ -156,4 +156,119 @@
         margin-bottom: 0;
         text-align: center;
     }
+    .crumbs {
+        margin-bottom: 14px;
+    }
+    .about-us, .article, .contacts, .news, .gallery, .photo, .question, .review, .search {
+        padding: 30px 16px 0px;
+    }
+    .gallery .gallery {
+        padding: 0;
+    }
+    .about-us__block .img {
+        height: 150px;
+    }
+    .about-us h2, .article h2, .contacts h2, .news h2, .gallery h2, .photo h2, .review__box, .search h2 {
+        margin-bottom: 24px;
+    }
+    .article__box {
+        flex-direction: column;
+    }
+    .article__box .img {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .article__box .img {
+        margin-bottom: 14px;
+    }
+    .article__title .date {
+        background-color: #374FC7;
+        color: #fff;    
+        padding: 4px 8px;
+    }
+    .contacts__box {
+        flex-direction: column;
+    }
+    .contacts__phone {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+    .contacts__mail {
+        margin-bottom: 24px;
+    }
+    .contacts__map {
+        margin-bottom: 24px;
+    }
+    .contacts__phone .img, .contacts__mail .img, .contacts__map .img {
+        min-width: 24px;
+        min-height: 24px;
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+    }
+    .contacts__block {
+        width: calc(100% - 30px);
+    }
+    .form__box {
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+    .form__block {
+        width: 100%;
+    }
+    .form__box .check {
+        margin-bottom: 14px;
+    }
+    .news__box {
+        flex-direction: column;
+    }
+    .news__box .aside__news {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 16px;
+    }
+    .gallery .row.grid {
+        flex-direction: column;
+    }
+    .gallery .isotope-card {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 16px;
+    }
+    .photo__box {
+        flex-direction: column;
+    }
+    .photo__box .aside__news {
+        width: 100%;
+        margin-right: 0 !important;
+        margin-bottom: 16px;
+    }
+    .review__box {
+        flex-direction: column;
+    }
+    .question .btn, .review .btn {
+        margin-top: 12px;
+    }
+    .question__block, .answer__block {
+        padding: 14px;
+    }
+    .question__block .img {
+        min-width: 30px;
+        margin-right: 12px;
+    }
+    .answer__block .img {
+        min-width: 30px;
+        margin-left: 12px;
+    }
+    .question__block .img img, .answer__block .img img {
+        width: 100%;
+    }
+    .answer__title p {
+        text-align: start;
+    }
+    .review__block {
+        padding: 16px;
+    }
 }

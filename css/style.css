@@ -1225,8 +1225,7 @@ ul, ol {
     .form__box .check input {
       width: 18px;
       height: 18px;
-      margin-right: 14px;
-      opacity: 0; }
+      margin-right: 14px; }
     .form__box .check label {
       font-weight: normal;
       font-size: 14px;
