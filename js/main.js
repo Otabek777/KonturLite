@@ -22,3 +22,7 @@ searchClose.addEventListener('click', function() {
     searchBlock.classList.remove('active');
 });
 
+document.querySelector('.header__burgir').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.aside__nav').classList.toggle('active');
+});
