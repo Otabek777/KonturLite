@@ -76,7 +76,7 @@ ul, ol {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 3px 20px rgba(9, 30, 66, 0.1), 0px 0px 1px rgba(9, 30, 66, 0.31);
   box-shadow: 0px 3px 20px rgba(9, 30, 66, 0.1), 0px 0px 1px rgba(9, 30, 66, 0.31);
-  padding: 44px 40px 60px;
+  padding: 44px 47px 60px;
   position: relative; }
   .modal__block h3 {
     font-weight: bold;
@@ -184,7 +184,8 @@ ul, ol {
     font-size: 18px;
     line-height: 24px;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: 'Lato', sans-serif; }
 
 .modal.active {
   display: -webkit-box;
@@ -192,7 +193,7 @@ ul, ol {
   display: flex; }
 
 .modal.done .modal__block {
-  padding: 100px 40px; }
+  padding: 100px 47px; }
 
 .modal.done h2 {
   font-weight: bold;
@@ -293,7 +294,7 @@ ul, ol {
     font-size: 16px;
     line-height: 150%; }
   .header__form .btn {
-    width: 76px;
+    min-width: 76px;
     height: 38px;
     background: #374FC7;
     border-radius: 4px;
@@ -385,6 +386,8 @@ ul, ol {
     background-color: transparent;
     cursor: pointer;
     position: relative; }
+    .header__phone .number svg {
+      fill: #374FC7; }
     .header__phone .number p {
       font-weight: normal;
       font-size: 14px;
@@ -468,7 +471,7 @@ ul, ol {
       line-height: 24px;
       color: #333;
       font-family: 'Lato', sans-serif;
-      padding: 7px 21px;
+      padding: 13.5px 21px;
       position: relative;
       overflow: hidden; }
     .aside__nav li a::after {
@@ -664,7 +667,7 @@ ul, ol {
 
 .page h2 {
   font-weight: bold;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 41px; }
 
 .page__block {
@@ -786,6 +789,7 @@ ul, ol {
     color: #2B2B2B; }
 
 .review .btn {
+  width: 202px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -807,7 +811,8 @@ ul, ol {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  font-family: 'Lato', sans-serif; }
 
 .review .btn:hover {
   background: #4463ff; }
@@ -892,6 +897,8 @@ ul, ol {
   justify-content: center;
   margin-top: 40px; }
   .next_page a {
+    width: 28px;
+    height: 28px;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
@@ -943,7 +950,8 @@ ul, ol {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #374FC7; }
+  color: #374FC7;
+  font-family: 'Lato', sans-serif; }
   .article__title a img {
     margin-left: 12px; }
 
@@ -954,7 +962,8 @@ ul, ol {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #AAAAAA; }
+  color: #AAAAAA;
+  font-family: 'Lato', sans-serif; }
 
 .question h2 {
   font-weight: bold;
@@ -962,6 +971,7 @@ ul, ol {
   line-height: 41px; }
 
 .question .btn {
+  width: 202px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -983,7 +993,8 @@ ul, ol {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  font-family: 'Lato', sans-serif; }
 
 .question .btn:hover {
   background: #4463ff; }
@@ -991,7 +1002,7 @@ ul, ol {
 .question__block {
   background: #D7DCF4;
   border-radius: 4px;
-  padding: 40px 44px 45px 40px;
+  padding: 40px 60px 45px 46px;
   margin-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1084,7 +1095,7 @@ ul, ol {
   .search__form input::placeholder {
     color: #333333; }
   .search__form .btn {
-    width: 95px;
+    min-width: 95px;
     border: none;
     background: #374FC7;
     border-radius: 4px;
@@ -1092,7 +1103,8 @@ ul, ol {
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: 'Lato', sans-serif; }
 
 .search__block {
   margin-bottom: 24px; }
@@ -1233,7 +1245,7 @@ ul, ol {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 36px; }
+  margin-bottom: 12px; }
   .form__box .check {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1243,8 +1255,8 @@ ul, ol {
     align-items: center;
     position: relative; }
     .form__box .check input {
-      width: 18px;
-      height: 18px;
+      min-width: 18px;
+      min-height: 18px;
       margin-right: 14px; }
     .form__box .check label {
       font-weight: normal;
@@ -1262,39 +1274,45 @@ ul, ol {
     color: #fff;
     cursor: pointer; }
 
-.form__block {
-  width: 48%; }
-  .form__block h6 {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    margin-bottom: 10px;
-    color: #333; }
-  .form__block input {
-    width: 100%;
-    height: 48px;
-    margin-bottom: 20px;
-    background: #FFFFFF;
-    border: 1px solid #AAAAAA;
-    border-radius: 4px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 0 12px;
-    color: #333; }
-  .form__block textarea {
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 236px;
-    max-height: 236px;
-    background: #FFFFFF;
-    border: 1px solid #AAAAAA;
-    border-radius: 4px;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #333;
-    padding: 16px 12px; }
+.form__block h6 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  color: #333; }
+
+.form__block input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1px solid #AAAAAA;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 12px;
+  color: #333; }
+
+.form__block textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 236px;
+  max-height: 236px;
+  background: #FFFFFF;
+  border: 1px solid #AAAAAA;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333;
+  padding: 16px 12px; }
+
+.form__block:nth-child(1) {
+  width: 350px; }
+
+.form__block:nth-child(2) {
+  width: 445px; }
 
 .gallery h2 {
   margin-bottom: 40px; }
@@ -1404,9 +1422,6 @@ ul, ol {
       font-weight: normal;
       font-size: 16px;
       line-height: 150%;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 150%;
       color: #FFFFFF;
       margin-left: 7px;
       margin-right: 5px; }
@@ -1418,7 +1433,8 @@ ul, ol {
     line-height: 17px;
     color: #FFFFFF;
     border-bottom: 1px dashed #FFFFFF;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 12px; }
 
 .footer__copy {
   margin-top: 24px;

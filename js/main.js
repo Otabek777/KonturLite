@@ -5,14 +5,14 @@ const btnNum = document.querySelector('.number'),
       searchClose = document.querySelector('#searchClose'),
       body = document.querySelector('body');
 
-body.addEventListener('click', function() {
-    blockNum.classList.remove('active');
-});
+// body.addEventListener('click', function() {
+//     blockNum.classList.remove('active');
+// });
 
 btnNum.addEventListener('click', function() {
     setTimeout(function() {
-        blockNum.classList.add('active');
-    }, 0001)
+        blockNum.classList.toggle('active');
+    }, 0)
 });
 
 searchOpen.addEventListener('click', function() {
