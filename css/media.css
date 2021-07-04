@@ -33,6 +33,9 @@
     .aside__nav.active {
         top: 0;
     }
+    .aside__nav li a::after {
+        display: none;
+    }
     .footer__box {
         flex-direction: column;
     }
