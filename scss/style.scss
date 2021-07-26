@@ -343,6 +343,45 @@ ul,ol {
 .header__form.active {
     height: 64px;
 }
+.menu-top {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    .menu-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 36px;
+        img {
+            width: 100%;
+        }
+    }
+    .menu-close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+        border: none;
+        background-color: transparent;
+    }
+}
+.menu-soc {
+    display: none;
+    align-items: center;
+    margin-top: 25px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        background: #B3B3B3;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+}
 .header__logo {
     width: 138px;
     margin-right: 46px;
@@ -496,6 +535,9 @@ ul,ol {
     li:last-child {
         border-bottom: none;
     }
+}
+.aside__nav2 {
+    display: none;
 }
 .aside__news {
     width: 100%;
@@ -1460,7 +1502,7 @@ ul,ol {
 
 .footer__bottom {
     border-top: 1px solid #818181;
-    padding-top: 8px;
+    padding-top: 12px;
 }
 .footer__left {
     width: 630px;

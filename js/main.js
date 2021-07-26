@@ -23,6 +23,9 @@ searchClose.addEventListener('click', function() {
 });
 
 document.querySelector('.header__burgir').addEventListener('click', function() {
-    this.classList.toggle('active');
-    document.querySelector('.aside__nav').classList.toggle('active');
+    // this.classList.toggle('active');
+    document.querySelector('.menu-mobile').classList.toggle('active');
+});
+document.querySelector('.menu-close').addEventListener('click', function() {
+    document.querySelector('.menu-mobile').classList.remove('active');
 });

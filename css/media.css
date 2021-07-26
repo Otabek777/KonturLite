@@ -1,4 +1,10 @@
 @media screen and (max-width: 1000px) {
+    .menu-top {
+        display: flex;
+    }
+    .menu-soc {
+        display: flex;
+    }
     .header {
         height: 55px;
     }
@@ -21,19 +27,23 @@
         display: flex;
     }
     .aside__nav {
-        width: 80%;
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+        width: calc(100% - 48px);
         position: absolute;
-        top: -100%;
+        top: -200%;
         z-index: 999;
         right: 0;
         background-color: #fff;
         filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.25));
         transition: all.3s linear;
     }
-    .aside__nav.active {
+    .menu-mobile.active {
         top: 0;
     }
-    .aside__nav li a::after {
+    .menu-mobile li a::after {
         display: none;
     }
     .footer__box {
@@ -362,5 +372,12 @@
     .modal__box .modal__close {
         top: 16px;
         right: 16px;
+    }
+    .menu-mobile {
+        margin-bottom: 0;
+        padding: 11px 45px 24px 36px;
+    }
+    .menu-mobile li a {
+        padding: 13px 1px;
     }
 }
